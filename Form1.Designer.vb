@@ -22,10 +22,63 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form1"
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        ToolStrip1 = New ToolStrip()
+        btnLogin = New ToolStripButton()
+        btnAdd = New ToolStripButton()
+        TreeView1 = New TreeView()
+        ToolStrip1.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' ToolStrip1
+        ' 
+        ToolStrip1.Items.AddRange(New ToolStripItem() {btnLogin, btnAdd})
+        ToolStrip1.Location = New Point(0, 0)
+        ToolStrip1.Name = "ToolStrip1"
+        ToolStrip1.Size = New Size(800, 25)
+        ToolStrip1.TabIndex = 2
+        ToolStrip1.Text = "ToolStrip1"
+        ' 
+        ' btnLogin
+        ' 
+        btnLogin.Image = CType(resources.GetObject("btnLogin.Image"), Image)
+        btnLogin.ImageTransparentColor = Color.Magenta
+        btnLogin.Name = "btnLogin"
+        btnLogin.Size = New Size(57, 22)
+        btnLogin.Text = "Login"
+        ' 
+        ' btnAdd
+        ' 
+        btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), Image)
+        btnAdd.ImageTransparentColor = Color.Magenta
+        btnAdd.Name = "btnAdd"
+        btnAdd.Size = New Size(119, 22)
+        btnAdd.Text = "Agregar Proyecto"
+        ' 
+        ' TreeView1
+        ' 
+        TreeView1.Location = New Point(0, 28)
+        TreeView1.Name = "TreeView1"
+        TreeView1.Size = New Size(273, 410)
+        TreeView1.TabIndex = 3
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        Controls.Add(TreeView1)
+        Controls.Add(ToolStrip1)
+        Name = "Form1"
+        Text = "Form1"
+        ToolStrip1.ResumeLayout(False)
+        ToolStrip1.PerformLayout()
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
+    Friend WithEvents ToolStrip1 As ToolStrip
+    Friend WithEvents btnLogin As ToolStripButton
+    Friend WithEvents btnAdd As ToolStripButton
+    Friend WithEvents TreeView1 As TreeView
 
 End Class
