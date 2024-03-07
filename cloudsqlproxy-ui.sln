@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "cloudsqlproxy-ui", "cloudsqlproxy-ui.vbproj", "{335DFEE4-E0BF-4C54-B3FA-86C28CAE49CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{335DFEE4-E0BF-4C54-B3FA-86C28CAE49CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335DFEE4-E0BF-4C54-B3FA-86C28CAE49CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335DFEE4-E0BF-4C54-B3FA-86C28CAE49CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335DFEE4-E0BF-4C54-B3FA-86C28CAE49CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB70AD9F-BCED-4266-AF7A-179155AD4FCA}
+	EndGlobalSection
+EndGlobal
